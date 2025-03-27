@@ -1,0 +1,21 @@
+[[annex-C]]
+[appendix,obligation=normative]
+== JSON Encoding Specifications
+
+[NOTE]
+Each Standardization Target has its requirements class here as a JSON-Schema spec 
+
+=== Basic-Euler JSON Encoding Requirements
+
+==== Requirement 1
+
+[requirement]
+====
+[%metadata]
+identifier:: /conf/conf-class-a/req-name-1
+requirement:: /req/req-class-a/req-name-1
+purpose:: Verify that...
+method:: Inspect...
+====
+
+==== Requirement 2

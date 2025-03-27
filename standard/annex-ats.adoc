@@ -1,0 +1,226 @@
+[[annex-A]]
+[appendix, obligation=normative]
+== Abstract Test Suite
+
+=== Introduction
+
+GeoPose 1.0 specifies eight Standardization Targets using elements of the Logical Model. These elements are Structural Data Units (SDUs) and they have the stereotype "Structural Data Unit - SDU". Each SDU is an element of the Logical Model that will be expressed in concrete data objects encoded using specific encoding or serialization technologies.
+
+Although implementation of the Standardization Targets, expressed as SDUs, is independent of the Logical Model, GeoPose 1.0 also defines one of many possible implementations, single encoding in JavaScript Object Notation (JSON). The encodings of the eight targets are specified using <<jsonschema2019>>. To keep the individual Standardization targets independent, there are some SDU requirements and corresponding conformance tests that appear in more than one requirement or conformance class. This structure is based on the judgement that it is easier to understand the independence of targets with complete definitions than would be the case if the definitional requirements of the SDUs were factored out and referenced indirectly by individual encodings.
+
+=== Global conformance class
+
+Conformance with the Global Requirements is required for all implementations.
+
+[yaml2text,modspec/yaml/global-cc.yaml,group]
+----
+{% assign prefix = "global" %}
+include::modspec/conformance_class.liquid[]
+----
+
+=== Common conformance classes
+
+==== Tangent point specification conformance class
+
+[yaml2text,modspec/yaml/tangent-point-cc.yaml,group]
+----
+{% assign prefix = "tangent-point" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Frame specification conformance class
+
+[yaml2text,modspec/yaml/frame-spec-cc.yaml,group]
+----
+{% assign prefix = "frame-spec" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Time specification conformance class
+
+[yaml2text,modspec/yaml/time-cc.yaml,group]
+----
+{% assign prefix = "time" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+=== SDU conformance
+
+==== General
+
+There are some universal requirements on values that appear in a concrete implementation using a specific encoding technology. For example, angles may be constrained to fall within a range of values corresponding to a circle. Because these are independent of encoding technology, they are specified here at a logical level. Tests of an implementation at the SDU level generally only be done by inspection.
+
+==== Basic-YPR SDU Conformance Class
+
+[yaml2text,modspec/yaml/basic-ypr-cc.yaml,group]
+----
+{% assign prefix = "basic-ypr" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Basic-Quaternion SDU Conformance Class
+
+[yaml2text,modspec/yaml/basic-quaternion-cc.yaml,group]
+----
+{% assign prefix = "basic-quaternion" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+==== Advanced SDU Conformance Class
+
+[yaml2text,modspec/yaml/advanced-cc.yaml,group]
+----
+{% assign prefix = "advanced" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+
+==== Graph SDU Conformance Class
+
+[yaml2text,modspec/yaml/graph-cc.yaml,group]
+----
+{% assign prefix = "graph" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+
+==== Chain SDU Conformance Class
+
+[yaml2text,modspec/yaml/chain-cc.yaml,group]
+----
+{% assign prefix = "chain" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+==== Regular Series SDU Conformance Class
+
+[yaml2text,modspec/yaml/series-regular-cc.yaml,group]
+----
+{% assign prefix = "series-regular" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+
+==== Irregular Series SDU Conformance Class
+
+[yaml2text,modspec/yaml/series-irregular-cc.yaml,group]
+----
+{% assign prefix = "series-irregular" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+
+==== Stream SDU Conformance Class
+
+[yaml2text,modspec/yaml/stream-cc.yaml,group]
+----
+{% assign prefix = "stream" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+=== Encoding conformance
+
+==== JSON encoding
+
+Each encoding technology has its own independent test suite. There is one conformance class per Standardization target per encoding technology. The GeoPose Standard 1.0 has one encoding technology: JSON.
+
+
+==== Basic-YPR SDU JSON conformance class
+
+The *Basic-YPR GeoPose* is the JSON encoding intended for widest use.
+
+[yaml2text,modspec/yaml/basic-ypr-json-cc.yaml,group]
+----
+{% assign prefix = "basic-ypr-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Basic-Quaternion SDU JSON conformance class
+
+The *Basic-Quaternion GeoPose* JSON encoding is intended for applications using quaternions. It comes in two sub-versions: normal and strict. The only difference is that a strict sub-version does not allow additional JSON members.
+
+[yaml2text,modspec/yaml/basic-quaternion-json-strict-cc.yaml,group]
+----
+{% assign prefix = "basic-quaternion-json-strict" %}
+include::modspec/conformance_class.liquid[]
+----
+
+[NOTE]
+The *Basic-Quaternion (Strict) GeoPose* JSON encoding does not allow additional JSON members.
+
+
+[yaml2text,modspec/yaml/basic-quaternion-json-cc.yaml,group]
+----
+{% assign prefix = "basic-quaternion-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Advanced SDU JSON conformance class
+
+The *Advanced GeoPose* JSON encoding has an optional time stamp and a flexible Outer Frame specification.
+
+[yaml2text,modspec/yaml/advanced-json-cc.yaml,group]
+----
+{% assign prefix = "advanced-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Graph SDU JSON conformance class
+
+The *GeoPose Graph* JSON encoding supports a directed graph structure.
+
+[yaml2text,modspec/yaml/graph-json-cc.yaml,group]
+----
+{% assign prefix = "graph-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+==== Chain SDU JSON conformance class
+
+The *GeoPose Chain* JSON encoding supports a linear sequence of frame transformations for modelling articulated structures.
+
+[yaml2text,modspec/yaml/chain-json-cc.yaml,group]
+----
+{% assign prefix = "chain-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+
+==== Regular Series SDU JSON conformance class
+
+The *GeoPose Regular Series* JSON encoding supports a time series of equally-spaced GeoPoses.
+
+[yaml2text,modspec/yaml/series-regular-json-cc.yaml,group]
+----
+{% assign prefix = "series-regular-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Irregular Series SDU JSON conformance class
+
+The *GeoPose Irregular Series* JSON encoding has an optional time stamp and a flexible Outer Frame specification.
+
+[yaml2text,modspec/yaml/series-irregular-json-cc.yaml,group]
+----
+{% assign prefix = "series-irregular-json" %}
+include::modspec/conformance_class.liquid[]
+----
+
+==== Stream SDU JSON conformance class
+
+The *GeoPose Stream* JSON encoding has an optional time stamp and a flexible Outer Frame specification.
+
+[yaml2text,modspec/yaml/stream-json-cc.yaml,group]
+----
+{% assign prefix = "stream-json" %}
+include::modspec/conformance_class.liquid[]
+----

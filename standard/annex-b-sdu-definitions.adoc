@@ -1,0 +1,21 @@
+[[annex-B]]
+[appendix,obligation=normative]
+== Definition of Structural Data Units
+
+[NOTE]
+Each of the SDUs is specified here
+
+=== Conformance Class SDU
+
+==== Requirement 1
+
+[requirement]
+====
+[%metadata]
+identifier:: /conf/conf-class-a/req-name-1
+requirement:: /req/req-class-a/req-name-1
+purpose:: Verify that...
+method:: Inspect...
+====
+
+==== Requirement 2

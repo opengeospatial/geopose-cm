@@ -1,0 +1,41 @@
+
+[bibliography]
+== Bibliography
+
+* [[[ogc-testbed12,1]]], OGC: OGC Testbed 12 Annex B: Architecture. (2015).
+
+* [[[geometric-tools,2]]], PHILIP J. SCHNEIDER, DAVID H. EBERLY, Geometric Tools for Computer Graphics, Morgan Kaufmann, 2003.
+
+* [[[ogc-testbed14,OGC 18-025]]]
+
+* [[[simulation,OGC 20-087]]]
+
+* [[[isg,5]]], ISG Year 2 ER ( https://github.com/opengeospatial/OGC-ISG-Sprint-Sep-2020/tree/master/Sprint%20Report )
+
+* [[[geovolumes,6]]], GeoVolumes charter ( https://portal.ogc.org/files/97171 )
+
+* [[[ref-frame,7]]], Reference frame https://en.wikipedia.org/wiki/Frame_of_reference
+
+* [[[pose,8]]], Pose https://en.wikipedia.org/wiki/Pose_(computer_vision)
+
+* [[[owl-time,W3C CR-owl-time-20200326]]]
+
+* [[[iso-19162, ISO 19162:2019]]]
+
+* [[[iso-19111, ISO 19111:2019]]]
+
+* [[[epsg,12]]], EPSG https://epsg.org
+
+* [[[nasa-spice,13]]], NASA SPICE https://naif.jpl.nasa.gov/naif/ Navigation and ancillary information facility
+
+* [[[ypr,14]]], YPR https://www.gwg.nga.mil/misb//docs/standards/ST0601.8.pdf
+
+* [[[env1613,CEN ENV 1613:1994]]], CEN. ENV 1613:1994 Exchange of Laboratory Information.
+
+* [[[iso13972,ISO 13972:2022]]]
+
+* [[[iso8601-1,ISO 8601-1:2019]]]
+
+* [[[iso8601-2,ISO 8601-2:2019]]]
+
+* [[[Booch1997,10]]], Booch, G., Rumbaugh, J., Jacobson, I.: Unified Modeling Language User Guide. Addison-Wesley (1997)
