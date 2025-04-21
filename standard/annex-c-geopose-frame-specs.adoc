@@ -1,4 +1,4 @@
-[[annex-D]]
+[[annex-C]]
 [appendix,obligation=informative]
 == GeoPose Local Frame of Reference Specifications
 
