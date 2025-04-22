@@ -1,5 +1,0 @@
-[[_media_types]]
-
-== Media Types for JSON Encoding
-
-application/json: http://www.iana.org/assignments/media-types/application/json 
