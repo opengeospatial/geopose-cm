@@ -6,6 +6,8 @@ This repository is the responsibility of the  https://www.ogc.org/projects/group
 
 This update to the GeoPose 1.0 standard describes the Conceptual and Logical models for seamlessly expressing, recording, and sharing the GeoPose of objects in an entirely consistent manner across different applications, users, devices, services, and platforms that adopt the standard or are able to translate/exchange the GeoPose into another CRS. It removes all requirements and conformance tests pertaining to encodings of GeoPose, and exposes underlying GeoPose components via new normative language as well as adding the corresponding requirements and conformance tests.
 
+As indicated by keeping the first number of the standard constant (v 1.0 and v 1.1), the standard defined in this repository will be fully backward compatible so any investment based on v 1.0 will not be lost. One benefit of v1.1 will be that other standards can reference one or more GeoPose components normatively.
+
 This repository holds the latest Editor's Draft of the GeoPose 1.1 CM specification and reflects the current agreement of members of the https://www.ogc.org/projects/groups/geoposeswg[GeoPose SWG]
 
 # Draft OGC GeoPose 1.1 JSON Encoding Standard
