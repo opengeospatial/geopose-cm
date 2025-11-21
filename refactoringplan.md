@@ -8,7 +8,7 @@ In order to make OGC standards more easily used, a goal for future standards is 
 
 The purpose of this project is to build a new specification in this repository focusing on the GeoPose Conceptual and Logical Model that is already set up with Metanorma for publishing as an official OGC document. In addition, as part of the input to the new specification, this project provides images and text about the GeoPose Components in the refactoring-resources folder. /workspaces/geopose-cm/refactoring-resources
 
-The GeoPose Conceptual and Logical Model that this new specification will always be backward compatible with the GeoPose Standard 1.0. The new specification will retain many parts of the original GeoPose 1.0 Data Exchange Standard. Specifically, new specification will have the same as GeoPose 1.0:
+The GeoPose Conceptual and Logical Model that this new specification will describe will always be backward compatible with the GeoPose Standard 1.0. The new specification will retain many parts of the original GeoPose 1.0 Data Exchange Standard. Specifically, new specification will have the same as GeoPose 1.0:
 - License Agreement 
 - Keywords (maybe add some?)
 - Preface
