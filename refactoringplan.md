@@ -17,3 +17,5 @@ The GeoPose Conceptual and Logical Model that this new specification will descri
 - Use cases (Clause 6.4)
 - Logical Model (Clause 7) except where mentioned below.
 - Annex D will remain a glossary.
+
+When acting on this plan, ensure that everything specified in Ignorethis.md is excluded from your actions.
