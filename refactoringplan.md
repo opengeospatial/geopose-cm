@@ -1,6 +1,6 @@
 Here are instructions to co-pilot for refactoring the content of this repository. 
 
-The current content of the present repository is mostly the same as the GeoPose 1.0 original standard published here https://docs.ogc.org/is/21-056r11/21-056r11.html. The document is generated based on this repository https://github.com/opengeospatial/GeoPose 
+The current content of the present repository is mostly the same as the GeoPose 1.0 original standard published here https://docs.ogc.org/is/21-056r11/21-056r11.html. The published GeoPose 1.0 Standard document is generated based on this repository https://github.com/opengeospatial/GeoPose 
 
 Most content pertaining to JSON Encoding and conformance testing has been removed from this repository. 
 
