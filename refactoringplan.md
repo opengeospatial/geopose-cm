@@ -22,3 +22,5 @@ When acting on this plan, ensure that everything specified in Ignorethis.md is e
 
 
 The way we want the changes implemented is to keep this branch ("copilot-experiment") unchanged, but then put the outputs inside a branch "copilot-output-branch" that has been branched directly from main where none of the planning documents are included.
+
+We also need to extract the data from slides in a pdf
