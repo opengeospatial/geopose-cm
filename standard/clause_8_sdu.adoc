@@ -66,6 +66,157 @@ include::modspec/requirements_class.liquid[]
 ----
 
 
+=== GeoPose components (informative)
+
+This clause provides an informative overview of GeoPose components that are used to compose GeoPose objects and Standardization Targets.
+The normative definitions of these components, their associations, and any SDU stereotypes are specified in the GeoPose Logical Model.
+
+In this document, a _component_ is a datatype or a class:
+
+* justified by a use case;
+* conceptually in scope; and
+* having a machine-readable schema.
+
+GeoPose objects are (unordered) compositions of GeoPose components.
+
+[[components-core]]
+==== Core components
+
+.Core components (summary)
+image::diagram/Components-Core.jpg[]
+
+[cols="1,2,3",options="header"]
+|===
+|Component | Properties | Description
+
+|Position
+|`lat`, `lon`, `h`
+|Geodetic or geographic position defined by two angles and a height.
+
+|Quaternion
+|`x`, `y`, `z`, `w`
+|Orientation defined by the three vector components and one scalar component of a unit quaternion.
+
+|Angles
+|`yaw`, `pitch`, `roll`
+|Orientation defined by three angles in degrees: yaw, pitch, and roll.
+
+|Coordinates
+|`coordinates[]`
+|A variable-length array of coordinate values.
+|===
+
+
+[[components-time]]
+==== Time coordinate components
+
+.Time coordinate components (summary)
+image::diagram/Components-Time.jpg[]
+
+[cols="1,2,3",options="header"]
+|===
+|Component | Properties | Description
+
+|Instant
+|`timeCoordinate`, optional `timeOrigin`
+|A time coordinate value expressed relative to an optional time origin.
+
+|TimeOrigin
+|`epoch`, `TCRS`
+|A specification of time origin, including an epoch and a temporal CRS identifier.
+|===
+
+
+[[components-uncertainty]]
+==== Uncertainty components
+
+.Uncertainty components (summary)
+image::diagram/Components-Uncertainty.jpg[]
+
+[cols="1,2,3",options="header"]
+|===
+|Component | Properties | Description
+
+|PoseUncertainty
+|`positionUncertainty`, `orientationUncertainty`
+|Aggregates position and orientation uncertainty for a pose.
+
+|Confidence
+|`confidence`
+|A confidence value (double).
+
+|PositionUncertainty
+|`deltaX`, `deltaY`, `deltaZ`
+|Position uncertainty expressed as deltas along axes.
+
+|OrientationUncertainty
+|`deltaPhi`, `deltaTheta`
+|Orientation uncertainty expressed as angular deltas.
+|===
+
+The following figures illustrate common uncertainty visualizations.
+
+.Position uncertainty ellipsoid (illustration)
+image::diagram/Components-Uncertainty-Ellipsoid.jpg[]
+
+.Orientation uncertainty cone (illustration)
+image::diagram/Components-Uncertainty-Cone.jpg[]
+
+
+[[components-image-elements]]
+==== Image element components (informative)
+
+This group includes components used to convey image-related measurements (e.g., depth maps, calibration) and related structures.
+
+.Image element components (summary)
+image::diagram/Components-Image-Elements.jpg[]
+
+[cols="1,2,3",options="header"]
+|===
+|Component | Properties (summary) | Description
+
+|DepthMap
+|`depthMap[]` (DepthPixel), `width`, `height`
+|Raster image with depth values.
+
+|DepthPixel
+|`colorSample`, `depth`
+|A depth sample with associated color and depth.
+
+|CameraCalibration
+|`Fx`, `Fy`, `Cx`, `Cy`, `W1`, `W2`, `P1`, `P2`, `W3`
+|Optical/scale calibration parameters.
+
+|RadianceField
+|`radianceField[]` (GaussianRadianceSample3D)
+|Volumetric radiance samples.
+
+|GaussianRadianceSample3D
+|`coordinates`, `scale[]`, `quaternion`, `colorSample`, `alpha`
+|A 3D radiance sample at a coordinate, with scale, orientation, color, and opacity.
+
+|ColorSample
+|`colors[]`
+|A color sample represented as an array of floating-point channel values.
+
+|CameraModel
+|`focalLength`, `aspectRatio`, `nearClip`, `farClip`, `fieldOfView`, `sensorWidth`, `sensorHeight`, `quaternion`
+|Camera pose and scale/model parameters.
+
+|TargetSet
+|`targets[]` (Target)
+|A collection of targets.
+
+|Target
+|`timeLimitedID`, `azimuth`, `altitude`, `range`
+|A target with an identifier and angular/range measurements.
+
+|TimeLimitedID
+|`ID`, optional `termination`
+|Identified object with an optional termination instant.
+|===
+
+
 === SDU requirements
 
 ==== Requirements for Standardization Target 1: Basic-YPR
