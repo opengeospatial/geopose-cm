@@ -1,11 +1,11 @@
 [[annex-B]]
 [appendix,obligation=normative]
-== Definition of Structural Data Units
+== Definition of Components
 
 [NOTE]
-Each of the SDUs is specified here
+Each of the components is specified here
 
-=== Conformance Class SDU
+=== Conformance Class Component
 
 ==== Requirement 1
 

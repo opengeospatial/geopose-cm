@@ -10,7 +10,7 @@ This standard describes eight standardization targets. These targets are indepen
 
 === Conformance classes
 
-This OGC(R) standard identifies eight conformance classes. One conformance class is defined for each corresponding set of Structural Data Units (SDUs) where each SDU is linked to the Logical Model as an alias for a class or attribute. Additionally, each of the eight standardization targets is represented by a conformance class as defined by a corresponding requirements class.
+This OGC(R) standard identifies eight conformance classes. One conformance class is defined for each corresponding set of components where each component is linked to the Logical Model as an alias for a class or attribute. Additionally, each of the eight standardization targets is represented by a conformance class as defined by a corresponding requirements class.
 
 The tests in <<annex-A>> are organized by requirements class. An implementation of a conformance class must pass all tests specified in <<annex-A>> for the corresponding requirements class.
 

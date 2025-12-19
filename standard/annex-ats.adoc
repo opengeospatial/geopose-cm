@@ -4,9 +4,9 @@
 
 === Introduction
 
-GeoPose 1.1 specifies eight Standardization Targets using elements of the Logical Model. These elements are Structural Data Units (SDUs) and they have the stereotype "Structural Data Unit - SDU". Each SDU is an element of the Logical Model that will be expressed in concrete data objects encoded using specific encoding or serialization technologies.
+GeoPose 1.1 specifies eight Standardization Targets using elements of the Logical Model. These elements are components and they have the "component" stereotype. Each component is an element of the Logical Model that will be expressed in concrete data objects encoded using specific encoding or serialization technologies.
 
-Implementation of the eight Standardization Targets is independent of the GeoPose Logical Model. The implementation of GeoPose 1.1 is neutral with regards to a developer's choice of encoding. To keep the individual Standardization targets independent, there are some SDU requirements and corresponding conformance tests that appear in more than one requirement or conformance class. This structure is based on the judgement that it is easier to understand the independence of targets with complete definitions than would be the case if the definitional requirements of the SDUs were factored out and referenced indirectly by individual encodings.
+Implementation of the eight Standardization Targets is independent of the GeoPose Logical Model. The implementation of GeoPose 1.1 is neutral with regards to a developer's choice of encoding. To keep the individual Standardization targets independent, there are some component requirements and corresponding conformance tests that appear in more than one requirement or conformance class. This structure is based on the judgement that it is easier to understand the independence of targets with complete definitions than would be the case if the definitional requirements of the components were factored out and referenced indirectly by individual encodings.
 
 
 === Global conformance class
@@ -46,13 +46,13 @@ include::modspec/conformance_class.liquid[]
 ----
 
 
-=== SDU conformance
+=== Component conformance
 
 ==== General
 
-There are some universal requirements on values that appear in a concrete implementation using a specific encoding technology. For example, angles may be constrained to fall within a range of values corresponding to a circle. Because these are independent of encoding technology, they are specified here at a logical level. Tests of an implementation at the SDU level generally only be done by inspection.
+There are some universal requirements on values that appear in a concrete implementation using a specific encoding technology. For example, angles may be constrained to fall within a range of values corresponding to a circle. Because these are independent of encoding technology, they are specified here at a logical level. Tests of an implementation at the component level generally only be done by inspection.
 
-==== Basic-YPR SDU Conformance Class
+==== Basic-YPR Component Conformance Class
 
 [yaml2text,modspec/yaml/basic-ypr-cc.yaml,group]
 ----
@@ -60,7 +60,7 @@ There are some universal requirements on values that appear in a concrete implem
 include::modspec/conformance_class.liquid[]
 ----
 
-==== Basic-Quaternion SDU Conformance Class
+==== Basic-Quaternion Component Conformance Class
 
 [yaml2text,modspec/yaml/basic-quaternion-cc.yaml,group]
 ----
@@ -69,7 +69,7 @@ include::modspec/conformance_class.liquid[]
 ----
 
 
-==== Advanced SDU Conformance Class
+==== Advanced Component Conformance Class
 
 [yaml2text,modspec/yaml/advanced-cc.yaml,group]
 ----
@@ -79,7 +79,7 @@ include::modspec/conformance_class.liquid[]
 
 
 
-==== Graph SDU Conformance Class
+==== Graph Component Conformance Class
 
 [yaml2text,modspec/yaml/graph-cc.yaml,group]
 ----
@@ -89,7 +89,7 @@ include::modspec/conformance_class.liquid[]
 
 
 
-==== Chain SDU Conformance Class
+==== Chain Component Conformance Class
 
 [yaml2text,modspec/yaml/chain-cc.yaml,group]
 ----
@@ -98,7 +98,7 @@ include::modspec/conformance_class.liquid[]
 ----
 
 
-==== Regular Series SDU Conformance Class
+==== Regular Series Component Conformance Class
 
 [yaml2text,modspec/yaml/series-regular-cc.yaml,group]
 ----
@@ -108,7 +108,7 @@ include::modspec/conformance_class.liquid[]
 
 
 
-==== Irregular Series SDU Conformance Class
+==== Irregular Series Component Conformance Class
 
 [yaml2text,modspec/yaml/series-irregular-cc.yaml,group]
 ----
@@ -118,7 +118,7 @@ include::modspec/conformance_class.liquid[]
 
 
 
-==== Stream SDU Conformance Class
+==== Stream Component Conformance Class
 
 [yaml2text,modspec/yaml/stream-cc.yaml,group]
 ----

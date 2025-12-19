@@ -36,10 +36,10 @@ image::images/Blue_UML.png[]
 Classes painted in blue are internal less-derived elements that are not themselves directly encoded as concrete data objects.
 
 [[fig4]]
-.Yellow Color Denotes Structural Data Units
+.Yellow Color Denotes Components
 image::images/Yellow_UML.png[]
 
-Classes painted in yellow correspond to Structural Data Units or have properties that are represented in Structural Data Units and in encodings of those SDUs. Only data types and classes painted yellow are encoded as concrete data objects.
+Classes painted in yellow correspond to components or have properties that are represented in components and in encodings of those components. Only data types and classes painted yellow are encoded as concrete data objects.
 
 [[fig5]]
 .Green Color Denotes Enumeration

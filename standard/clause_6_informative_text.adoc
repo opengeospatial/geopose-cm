@@ -8,7 +8,7 @@ The goal of this GeoPose Standard is to establish and document a common set of c
 
 The GeoPose Conceptual Model (CM) is a graph of related concepts. One technology-independent realization is given by the GeoPose Logical Model (LM).
 
-The GeoPose CM consists of linked definitions of terms denoting concepts expressed in the GeoPose LM and Structural Data Unit (SDU) specifications for the standardization targets.
+The GeoPose CM consists of linked definitions of terms denoting concepts expressed in the GeoPose LM and component specifications for the standardization targets.
 
 The CM describes a (non-normative) domain of discourse for terms used in defining a precise and normative LM expressed as a Unified Modelling Language (UML) class diagram.
 
@@ -35,9 +35,9 @@ The structure of the GeoPose Standard document flows from:
 
 * a realization of a portion of that conceptual domain with an implementation-neutral but specific and normative logical data model expressed in UML, and
 
-* the normative derivation of specific structural data units that represent abstract implementation and standardization targets.
+* the normative derivation of specific components that represent abstract implementation and standardization targets.
 
-These Structural Data Units (SDUs) are abstract: they are independent of implementation or delivery technology and serialization or encoding formats. 
+These components are abstract: they are independent of implementation or delivery technology and serialization or encoding formats. 
 
 A key aspect of the GeoPose Standard is that specific use cases are tied to the standardization targets, which prescribe the structure and content of GeoPose data objects. Corresponding implementation examples appear in other documents.
 
