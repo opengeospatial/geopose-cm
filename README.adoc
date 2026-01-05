@@ -2,7 +2,7 @@
 
 Welcome to the OGC GeoPose 1.1 Conceptual Model specification GitHub Repo.
 
-This repository is the responsibility of the  https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards Working Group (SWG)], working under the auspices of the https://www.ogc.org/[Open Geospatial Consortium]. The purpose of this repository is to update the original https://docs.ogc.org/is/21-056r11/21-056r11.html[OGC GeoPose 1.0 Data Exchange Standard] for geographically-anchored pose (GeoPose) with 6 degrees of freedom referenced to one or more standardized Coordinate Reference Systems (CRSs). 
+This repository is the responsibility of the https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards Working Group (SWG)], working under the auspices of the https://www.ogc.org/[Open Geospatial Consortium]. The purpose of this repository is to update the original https://docs.ogc.org/is/21-056r11/21-056r11.html[OGC GeoPose 1.0 Data Exchange Standard] for geographically-anchored pose (GeoPose) with 6 degrees of freedom referenced to one or more standardized Coordinate Reference Systems (CRSs). 
 
 This update to the GeoPose 1.0 standard describes the Conceptual and Logical models for seamlessly expressing, recording, and sharing the GeoPose of objects in an entirely consistent manner across different applications, users, devices, services, and platforms that adopt the standard or are able to translate/exchange the GeoPose into another CRS. It removes all requirements and conformance tests pertaining to encodings of GeoPose, and exposes underlying GeoPose components via new normative language as well as adding the corresponding requirements and conformance tests.
 
