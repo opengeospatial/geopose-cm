@@ -14,7 +14,11 @@ As of January 5, 2026 there remain several edits to be made to the draft, namely
 
 Once these and other modifications have been made by the editors, the SWG will perform a final review of the entire document for consistency and clarity. The GeoPose SWG anticipates completing these edits by January 29, 2026, at which time the draft will move to public review, the next stage of the OGC Standards Development Process. The public review period will close on or before March 5, 2026 (the end of the https://www.ogc.org/event/134th-member-meeting/[March 2026 OGC member meeting]). 
 
+image::DraftStandardsProcessTrimmed.jpg[]
+
 The GeoPose SWG will consider all comments received and prepare a final draft for submission to the OGC Technical Committee for approval as an OGC Standard. 
+
+
 
 # Draft OGC GeoPose 1.1 JSON Encoding Standard
 
