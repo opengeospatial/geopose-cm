@@ -2,13 +2,23 @@
 
 Welcome to the OGC GeoPose 1.1 Conceptual Model specification GitHub Repo.
 
-This repository is the responsibility of the  https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards Working Group (SWG)], working under the auspices of the https://www.ogc.org/[Open Geospatial Consortium]. The purpose of this repository is to update the original https://docs.ogc.org/is/21-056r11/21-056r11.html[OGC GeoPose 1.0 Data Exchange Standard] for geographically-anchored pose (GeoPose) with 6 degrees of freedom referenced to one or more standardized Coordinate Reference Systems (CRSs). 
+This repository is the responsibility of the https://www.ogc.org/projects/groups/geoposeswg[GeoPose Standards Working Group (SWG)], working under the auspices of the https://www.ogc.org/[Open Geospatial Consortium]. The purpose of this repository is to update the original https://docs.ogc.org/is/21-056r11/21-056r11.html[OGC GeoPose 1.0 Data Exchange Standard] for geographically-anchored pose (GeoPose) with 6 degrees of freedom referenced to one or more standardized Coordinate Reference Systems (CRSs). 
 
-This update to the GeoPose 1.0 standard describes the Conceptual and Logical models for seamlessly expressing, recording, and sharing the GeoPose of objects in an entirely consistent manner across different applications, users, devices, services, and platforms that adopt the standard or are able to translate/exchange the GeoPose into another CRS. It removes all requirements and conformance tests pertaining to encodings of GeoPose, and exposes underlying GeoPose components via new normative language as well as adding the corresponding requirements and conformance tests.
+This update to the GeoPose 1.0 standard describes the Conceptual and Logical models for seamlessly expressing, recording, and sharing the GeoPose of objects in an entirely consistent manner across different applications, users, devices, services, and platforms that adopt the standard or are able to translate/exchange the GeoPose into another CRS. It removes all requirements and conformance tests pertaining to encodings of GeoPose, and exposes underlying GeoPose components via new normative language as well as adding the corresponding requirements **QUESTION HERE: I think we are not going to have conformance tests. If that's so, then the next part of this sentence would need to be deleted** and conformance tests.
 
 As indicated by keeping the first number of the standard constant (v 1.0 and v 1.1), the standard defined in this repository will be fully backward compatible so any investment based on v 1.0 will not be lost. One benefit of v1.1 will be that other standards can reference one or more GeoPose components normatively.
 
-This repository holds the latest Editor's Draft of the GeoPose 1.1 CM specification and reflects the current agreement of members of the https://www.ogc.org/projects/groups/geoposeswg[GeoPose SWG]
+This repository holds the latest **UPDATE ACTION NEEDED: Link from this text to the actual draft when that is generated using Metanorma** Editor's Draft of the GeoPose 1.1 CM specification and reflects the current agreement of members of the https://www.ogc.org/projects/groups/geoposeswg[GeoPose SWG]. 
+
+As of January 5, 2026 there remain several edits to be made to the draft, namely, updating the informative sections (such as the Clause 0 Abstract, Clause 1 Scope, Clause 2 Conformance, and perhaps Clause 6 Informative Text) and removing any unnecessary language. It may be valuable to add examples of how to use the GeoPose components exposed in the GeoPose 1.1 CM. 
+
+Once these and other modifications have been made by the editors, the SWG will perform a final review of the entire document for consistency and clarity. The GeoPose SWG anticipates completing these edits by January 29, 2026, at which time the draft will move to public review, the next stage of the OGC Standards Development Process. The public review period will close on or before March 5, 2026 (the end of the https://www.ogc.org/event/134th-member-meeting/[March 2026 OGC member meeting]). 
+
+image::DraftStandardsProcessTrimmed.jpg[]
+
+The GeoPose SWG will consider all comments received and prepare a final draft for submission to the OGC Technical Committee for approval as an OGC Standard. 
+
+
 
 # Draft OGC GeoPose 1.1 JSON Encoding Standard
 

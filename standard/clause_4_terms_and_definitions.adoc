@@ -25,8 +25,7 @@ environment
 <<iso13972,clause="3.1.8">>
 
 
-==== structural data unit
-admitted:[SDU]
+==== component
 
 element of the {{logical model}} expressed in concrete data objects encoded
 using specific encoding or serialization technologies
